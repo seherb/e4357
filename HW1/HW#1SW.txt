@@ -1,5 +1,6 @@
 /*
-*This function calculates the sum of proper divisors of a given integer.
+*This function calculates the sum of proper divisors of a given integer 
+* according to following formula http://en.wikipedia.org/wiki/Divisor_function
 */
 int properDivisor(int i4Number)
 {
