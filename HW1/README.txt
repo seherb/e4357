@@ -1,1 +1,1 @@
-1.5 hours
+Total hours spent : 1.5
