@@ -1,0 +1,38 @@
+/*
+*This function calculates the sum of proper divisors of a given integer 
+* according to following formula http://en.wikipedia.org/wiki/Divisor_function
+*/
+int properDivisor(int i4Number)
+{
+	int i4Result = 1;
+	int i4Divider = 2;
+	int i4LocalNumber = i4Number;
+	int i =0;
+
+	while (i4LocalNumber % i4Divider == 0)
+	{
+		i4Divider *= 2;
+	}
+
+	i4LocalNumber /= i4Divider / 2;
+	i4Result *= (i4Divider - 1);
+
+	for (i = 3; i * i <= i4LocalNumber; i += 2)
+	{
+		i4Divider = i;
+		while (i4LocalNumber % i4Divider == 0)
+		{
+			i4Divider *= i;
+		}
+		i4LocalNumber /= i4Divider / i;
+
+		i4Result *= (i4Divider - 1) / (i - 1);
+	}
+
+	if (1 < i4LocalNumber)
+	{
+		i4Result *= i4LocalNumber + 1;
+	}
+
+	return (i4Result - i4Number);
+}

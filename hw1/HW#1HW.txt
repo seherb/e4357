@@ -1,0 +1,5 @@
+W9825G6JH-6 = SDRAM, http://www.winbond.com/NR/rdonlyres/16898431-2772-4CEA-8474-7E4AA855555F/0/W9825G6JH.pdf
+RTL8196E = CPU, http://www.gmb-online.nl/repository/7921/WNP-RP-002-B_source_manual---e036f4ec-49dc-49a8-a2b1-c88c50a65489.pdf
+MX25L3206E= 32M-BIT [x 1 / x 2] CMOS SERIAL FLASH ,http://www.zlgmcu.com/mxic/pdf/NOR_Flash_c/MX25L3206E_DS_EN.pdf
+RTL8192ER= ethernet chip
+RT32471H= step-down converter, http://www.datasheetarchive.com/dl/Datasheets-CRAI/DSACRA000018059.pdf
