@@ -52,4 +52,4 @@ Binary files ./HelloWorld_uvision/HelloWorld/mbed/LPC1768/ARM/system_LPC17xx.o a
 
 What is the "Entry point address:" of your program?
 
-- Entry point adress for booth of the is 0x0
+- Entry point adress for gcc arm is 0x1f5
