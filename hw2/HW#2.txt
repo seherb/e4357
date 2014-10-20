@@ -1,0 +1,55 @@
+How many text files and how many lines of text code in the exported offline code package?
+-GCC ARM
+ number of files
+ find $directory -type f \( -name "*.h" -o -name "*.cpp" \)| wc -l 
+ 54
+ lines of code
+ find $directory -type f \( -name "*.cpp" -o -name "*.h" \)| xargs wc -l | grep total
+ 9706 total
+
+-uVision
+number of files
+find $directory -type f \( -name "*.h" -o -name "*.cpp" \)| wc -l 
+54
+lines of code
+find $directory -type f \( -name "*.cpp" -o -name "*.h" \)| xargs wc -l | grep total
+  9706 total
+
+
+How many binary (library or object) files?
+
+-GCC ARM
+ find $directory -type f \( -name "*.a" -o -name "*.o" \)| wc -l 
+ 6
+-uVision
+ find $directory -type f \( -name "*.ar" -o -name "*.o" \)| wc -l 
+ 7
+
+How many files are different between
+
+seherb@seherb-VirtualBox:~/Downloads$ diff -r ./HelloWorld_uvision/HelloWorld/ ./HelloWorld_gcc_arm/HelloWorld/
+Only in ./HelloWorld_uvision/HelloWorld/: HelloWorld.uvopt
+Only in ./HelloWorld_uvision/HelloWorld/: HelloWorld.uvproj
+Only in ./HelloWorld_gcc_arm/HelloWorld/: Makefile
+
+seherb@seherb-VirtualBox:~/Downloads$ diff -r ./HelloWorld_uvision/HelloWorld/mbed/LPC1768/ARM ./HelloWorld_gcc_arm/HelloWorld/mbed/LPC1768/GCC_ARM/
+Only in ./HelloWorld_uvision/HelloWorld/mbed/LPC1768/ARM: capi.ar
+Binary files ./HelloWorld_uvision/HelloWorld/mbed/LPC1768/ARM/cmsis_nvic.o and ./HelloWorld_gcc_arm/HelloWorld/mbed/LPC1768/GCC_ARM/cmsis_nvic.o differ
+Binary files ./HelloWorld_uvision/HelloWorld/mbed/LPC1768/ARM/core_cm3.o and ./HelloWorld_gcc_arm/HelloWorld/mbed/LPC1768/GCC_ARM/core_cm3.o differ
+Only in ./HelloWorld_gcc_arm/HelloWorld/mbed/LPC1768/GCC_ARM/: libcapi.a
+Only in ./HelloWorld_gcc_arm/HelloWorld/mbed/LPC1768/GCC_ARM/: libmbed.a
+Only in ./HelloWorld_gcc_arm/HelloWorld/mbed/LPC1768/GCC_ARM/: LPC1768.ld
+Only in ./HelloWorld_uvision/HelloWorld/mbed/LPC1768/ARM: LPC1768.sct
+Only in ./HelloWorld_uvision/HelloWorld/mbed/LPC1768/ARM: mbed.ar
+Binary files ./HelloWorld_uvision/HelloWorld/mbed/LPC1768/ARM/startup_LPC17xx.o and ./HelloWorld_gcc_arm/HelloWorld/mbed/LPC1768/GCC_ARM/startup_LPC17xx.o differ
+Only in ./HelloWorld_uvision/HelloWorld/mbed/LPC1768/ARM: sys.o
+Binary files ./HelloWorld_uvision/HelloWorld/mbed/LPC1768/ARM/system_LPC17xx.o and ./HelloWorld_gcc_arm/HelloWorld/mbed/LPC1768/GCC_ARM/system_LPC17xx.o differ
+
+- 4 common files (object files) are different
+- uVision has 6 different files
+- gcc-arm has 4 different files
+
+
+What is the "Entry point address:" of your program?
+
+- Entry point adress for booth of the is 0x0
