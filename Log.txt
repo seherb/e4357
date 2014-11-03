@@ -1,0 +1,15 @@
+28 Oct 2014:
+ - According to team emails, ordered display and the ethernet connecters
+ - Continue reading from chapter 4
+
+29 Oct 2014:
+ - commit answers of Q1
+ - Continue reading
+
+31 Oct 2014 :
+ - Trying the debugging with printf, since the connecters not arrived yet
+ - Continue reading
+
+2 Nov 2014:
+- Start Hw4
+- Start reading chapter 8 for displays
