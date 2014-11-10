@@ -13,3 +13,16 @@
 2 Nov 2014:
 - Start Hw4
 - Start reading chapter 8 for displays
+
+6 Nov 2014
+- Worked on LCD
+- tried couple of demos
+- problems with wiring
+
+7 Nov2014
+- Started reading chapter 12 for ethernet
+- Tried some ethernet demos from mbed site
+
+9 Nov2014
+- Submitted Q2 and Q3
+- Started HW5
