@@ -26,3 +26,10 @@
 9 Nov2014
 - Submitted Q2 and Q3
 - Started HW5
+
+
+15 Nov2014
+- Meeting with the group. Ethetnet and display connection problems are resolved
+
+16 Nov2014
+-Working on HW6 
