@@ -1,9 +1,14 @@
 BEGIN
 --------------------------------------------------------------------
 Q1: Implement the following inline functions: 
-inline int CircularBufferIsFull(CircularBuffer* que) 
-inline int CircularBufferIsEmpty(CircularBuffer* que) 
-
+inline int CircularBufferIsFull(CircularBuffer* que)
+{
+	return (que->readPointer == ((que->writePointer + 1)&que->mask));
+}
+inline int CircularBufferIsEmpty(CircularBuffer* que)
+{
+	return (que->writePointer == que->readPointer );
+}
 
 
 
@@ -16,7 +21,7 @@ Q2: How to compute "Interrupt Latency"?
 Q3: Serial pc(USBTX, USBRX); // tx, rx 
     What API (function) do you use to change the baud rate?
 
-
+pc.baud(9600);
 
 
 --------------------------------------------------------------------
