@@ -15,7 +15,7 @@ inline int CircularBufferIsEmpty(CircularBuffer* que)
 --------------------------------------------------------------------
 Q2: How to compute "Interrupt Latency"?
 
-
+Time [interrupt disabled] + Time [process higher priority interrupt] + Time [OS bookkeeping] + Time [Context Switch]
 
 --------------------------------------------------------------------
 Q3: Serial pc(USBTX, USBRX); // tx, rx 
