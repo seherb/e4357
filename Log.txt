@@ -33,3 +33,12 @@
 
 16 Nov2014
 -Working on HW6 
+
+19 Nov 2014
+Working on final project 2 hours
+
+24 Nov 2014
+finalizing the project
+
+26 Nov 2014
+build elua
