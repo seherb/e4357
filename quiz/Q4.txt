@@ -34,7 +34,7 @@ It is seria data output pin. 1 bit.
 Q5:
 What is the address of ledArr[0]? it is in the heap  an the address is 0x1000015c 
 What is the address of ch? It is in the stack an the adress is 0x10007ff8
-
+I ran the following code on the mbed. and print out the requested addresses.
 
 /* 
 * Enter a hex number [0-9a-fA-F]; Decode it in 4-bit binary format and display them on 4 on board leds. 

@@ -72,9 +72,9 @@ void reg_clear(volatile unsigned int * pReg, int ith)
 Q4: Write a swap function in C.
 void swap(unsigned int * px, unsigned int *py) { 
 
-int temp = px*;
-*px = *py;
-*py = temp
+*px ^=*py;
+*py ^=*px;
+*px ^=*py;
 
 
 } 
